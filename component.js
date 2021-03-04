@@ -3,7 +3,7 @@ const component = {}
 component.header = (name, job) => {
     return `
     <div class="nav-bar">
-        <span class="logo">My Portfolio</span>
+        <span ><button class="logo"><h3>My Portfolio</h3></button></span>
         <ul class="nav-contents">
             <li>Home</li>
             <li>About</li>
@@ -23,6 +23,37 @@ component.header = (name, job) => {
 
 component.body = () => {
     return `<div><div/>`
+}
+
+component.about = () => {
+    return `
+    <div class="about-content">
+        <div class="header">
+            <h3>ABOUT ME</h3>
+        </div>
+        <div class="container">
+            <img class="avatar" src = './img/banner.jpg'>
+            <div>
+                <ul class="btn-list">
+                    <li>
+                        <button id = 'prf-btn'>
+                            PROFILE
+                        </button>
+                    </li>
+                    <li>
+                        <button id = 'skl-btn'>
+                            SKILLS
+                        </button>
+                    </li>
+                    <li><button id = 'tnlg-btn'>TECHONOLOGY</button></li>
+                </ul>
+            </div>
+            <div id = 'desc-list'>
+            
+            </div>    
+        </div>
+    </div>
+    `
 }
 
 component.profile = () => {
@@ -57,7 +88,27 @@ component.skills = () => {
 
 component.tech = () => {
     return `
-        <div class = 'desc'>
-        </div>
+    <div class="desc">
+        <ul>
+            <li>
+                <span>ReactJS</span>
+                <span></span>
+            </li>
+            <br>
+            <li>
+                <span>NodeJs</span>
+            </li>
+            <br>
+
+            <li>
+                <span>ExpressJS</span>
+            </li>
+            <br>
+
+            <li>
+                <span>MongoDB</span>
+            </li>
+        </ul>
+    </div>
     `
 }

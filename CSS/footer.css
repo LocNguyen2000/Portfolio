@@ -1,0 +1,49 @@
+#footer{
+    margin-top: 25px;
+    font-family: OpenSans, Helvetica, Arial;
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color:#fbaa33 ;
+    font-size: larger;
+    color: white;
+    justify-content: center;
+    /* text-align: center; */
+    height: 125px;
+ }
+
+ .contacts-info{
+     background-color: #3A4046;
+     width: 100%;
+     height: auto;
+     color: white;
+ }
+ .contacts-info ul{
+     display: flex;
+     justify-content: space-evenly;
+     list-style: none;
+     padding: 5%;
+ }
+ .contacts-info ul li{
+     display: flex;
+     flex-direction: column;
+     font-size: larger;
+
+ }
+
+ 
+ /* .contacts-info ul li:hover{
+     cursor: pointer;
+ } */
+ .contacts-info ul li a{
+     text-decoration: none;
+ }
+ .contacts-info ul li a:visited{
+     color: white;
+     text-decoration: none;
+
+ }
