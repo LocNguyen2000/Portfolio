@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#header .nav-bar{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    height: 85px;
+    align-items: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+}
+
+
+#header .nav-bar .logo{
+    font-family: SourceSansPro-Black, Helvetica, Arial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.75px;
+    /* line-height: 10px; */
+    text-transform: none;
+    color: #3A4046;
+    border: none;
+    background-color: white;
+}
+#header .nav-bar .logo:hover{
+    cursor: pointer;
+}
+#header .nav-bar .logo:focus{
+    outline: none;
+}
+
+#header .nav-bar .nav-contents{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    font-family: OpenSans, Helvetica, Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+    color: #5D656C;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 10%;
+}
+#header .nav-bar .nav-contents li{
+    padding-left: 5px;
+}
+
+#header .nav-bar .nav-contents li:hover{
+    color: #fbaa33;
+    font-weight: bold;
+    font-size: 23px;
+    list-style: square;
+    cursor: pointer;
+    transition: 0.25s ease;
+
+}
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../banner2.jpg");
+    height: 60%;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    margin-top: 5px;
+}
+.banner:hover{
+    filter: blur(8px);
+    -webkit-filter: blur(5px);
+    transition: 0.5s ease;
+    cursor: pointer;
+    /* color: white; */
+}
+
+.intro{
+    /* padding-top: 10px; */
+    padding-left: 5%;
+    width: 50%;
+    font-family: SourceSansPro-Black, Helvetica, Arial;
+    text-align: center;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.intro *{
+    letter-spacing: 1px;
+    padding: 5px;
+}

@@ -3,20 +3,22 @@
     margin-top: 35px;
     margin-left: 5%;
 }
-
+.about-content{
+    width: 100%;
+}
 .about-content .container{
     display: flex;
     flex-direction: row;
 }
 
-.about-content .header{
+.header{
     font-family: OpenSans, Helvetica, Arial;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: normal;
     text-transform: none;
     color: #3A4046;
-    padding: 10px;    
+    padding: 15px;    
     letter-spacing: 1px;
 }
 .avatar{
@@ -36,7 +38,7 @@
     border: none;
     color: #fbaa33;
     font-weight: bold;
-    font-size: larger;
+    font-size: 15px;
     /* border-bottom: 1px solid dimgrey; */
     /* margin: 10px; */
 }
@@ -49,19 +51,35 @@
 
 .desc{
     padding-top: 30px;
-    width: 90%;
+    width: 95%;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 25px;
     font-family: OpenSans, Helvetica, Arial;
     font-size: 15px;
     font-style: normal;
     font-weight: normal;
     text-transform: none;
-    color:#fbaa33;
+    color:#3A4046;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     /* color: #5D656C; */
 }
 .desc ul{
     list-style: none;
+}
+
+
+
+#prj-cnt{
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+hr{
+    width: 20%;
+    height: 5px;
+    background: dimgray;
+    position: absolute;
+    left: 5%;
 }

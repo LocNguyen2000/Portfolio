@@ -22,7 +22,7 @@ component.header = (name, job) => {
 }
 
 component.body = () => {
-    return `<div><div/>`
+    return component.about() + component.prjs()
 }
 
 component.about = () => {
@@ -37,6 +37,7 @@ component.about = () => {
                 <ul class="btn-list">
                     <li>
                         <button id = 'prf-btn'>
+                            
                             PROFILE
                         </button>
                     </li>
@@ -56,19 +57,36 @@ component.about = () => {
     `
 }
 
-component.profile = () => {
+component.profile = (name, gender, place, email, phone) => {
     return  `<div class="desc">
-        <div>Name: Nguyen Huu Loc</div>
+        <div>
+            <i class="fa fa-user-circle-o"></i>
+            Name: ${name}
+        </div>
         <br>
-        <div>Gender: Male </div>
+        <div>
+            <i class="fa fa-male"></i>
+            Gender: ${gender} 
+        </div>
         <br>
-        <div>Places: Hanoi, Vietnam</div>
+        <div>
+            <i class = "fa fa-address-card"></i>
+            Places: ${place}
+        </div>
         <br>
-        <div>Email: locnguyenhuu2k@gmail.com </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            Email: ${email}
+        </div>
         <br>
-        <div>Phone: 0384696172 </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            Phone: ${phone} 
+        </div>
         <br>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius impedit, ipsum ipsa nihil nulla quisquam quasi neque recusandae? </div>
+        <div>
+            Career Goals: 
+        </div>
         <br>
     </div>`
 }
@@ -107,6 +125,61 @@ component.tech = () => {
 
             <li>
                 <span>MongoDB</span>
+            </li>
+        </ul>
+    </div>
+    `
+}
+
+
+component.prjs = () => {
+    return `
+        <div id = "prj-cnt">
+            <hr>
+            <div class = 'header'>
+               <h3> PROJECTS </h3>
+            </div>
+            <div>
+                <ul  id = "prj-list"> 
+
+                </ul>
+            </div>
+        </div>
+        
+        `
+}
+
+component.footer = ()=> {
+    return `
+    <div class="footer-container">
+        <h3>MY SOCIAL MEDIA</h3>
+    </div>
+    <div class="contacts-info">
+        <ul>
+            <li>
+                <h3>ABOUT ME</h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://www.facebook.com/profile.php?id=100004473497005">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        FACEBOOK
+                    </a>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-h%E1%BB%AFu-l%E1%BB%99c-9607a11b1/">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        LINKEDIN
+                    </a>
+                </h3>
+            </li>
+            <li>
+                <h3><a href="https://github.com/LocNguyen2000">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    GITHUB
+                </a></h3>
             </li>
         </ul>
     </div>

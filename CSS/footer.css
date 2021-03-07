@@ -9,11 +9,11 @@
     align-items: center;
     width: 100%;
     background-color:#fbaa33 ;
-    font-size: larger;
+    font-size: 15px;
     color: white;
     justify-content: center;
     /* text-align: center; */
-    height: 125px;
+    height: 80px;
  }
 
  .contacts-info{
@@ -31,7 +31,7 @@
  .contacts-info ul li{
      display: flex;
      flex-direction: column;
-     font-size: larger;
+     font-size: 15px;
 
  }
 
@@ -42,8 +42,17 @@
  .contacts-info ul li a{
      text-decoration: none;
  }
- .contacts-info ul li a:visited{
+.contacts-info ul li a:hover{
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+.contacts-info ul li a:visited{
      color: white;
      text-decoration: none;
 
- }
+}
+.contacts-info ul li a i{
+    margin: 3px;
+    font-size: 20px;
+}
+ 
