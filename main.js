@@ -35,11 +35,11 @@ function init(){
         prjContent.innerHTML += `
             <li> 
                 <div class = "desc">
-                    <h2>PROJECT: ${prj.header} </h2>
-                    <p>Job: ${prj.job} </p>
-                    <p>Description: ${prj.desc} </p>
-                    <p>Role: ${prj.role} </p>
-                    <p>Github Code: <a href = "${prj.link}"> ${prj.link}</a></p>
+                    <h2 class="prj-name">PROJECT: ${prj.header} </h2>
+                    <p class="job-name">Job: ${prj.job} </p>
+                    <p class="job-desc">Description: ${prj.desc} </p>
+                    <p class="role">Role: ${prj.role} </p>
+                    <p>Github Code: <a class= "link-github" href = "${prj.link}"> ${prj.link}</a></p>
                     <p>Technology: ${prj.tech} </p>
                 </div>
             </li>
